@@ -66,7 +66,7 @@ Please ensure you have security groups setup correctly. i.e:
 ```
 Type                 Protocol Port Range  Source                     Purpose
 SSH                  TCP      22          <IP you run bosh CLI from> SSH (if Registry is used)
-Custom TCP Rule      TCP      6868        <IP you run bosh CLI from> Agent for bootstrapping
+Custom TCP Rule      TCP      3389        <IP you run bosh CLI from> Agent for bootstrapping
 Custom TCP Rule      TCP      25555       <IP you run bosh CLI from> Director API
 Custom TCP Rule      TCP      8443        <IP you run bosh CLI from> UAA API (if UAA is used)
 Custom TCP Rule      TCP      8844        <IP you run bosh CLI from> CredHub API (if CredHub is used)

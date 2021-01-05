@@ -17,7 +17,7 @@
   value:
     ports:
     - host: 22
-    - host: 6868
+    - host: 3389
     - host: 25555
     - host: 4222
     - host: 25250
@@ -38,7 +38,7 @@
         options:
           blobstore_path: /var/vcap/micro_bosh/data/cache
         provider: local
-      mbus: https://mbus:((mbus_bootstrap_password))@0.0.0.0:6868
+      mbus: https://mbus:((mbus_bootstrap_password))@0.0.0.0:3389
     warden:
       connect_address: ((garden_host)):7777
       connect_network: tcp

@@ -20,7 +20,7 @@
   value:
     ports:
     - 22/tcp
-    - 6868/tcp
+    - 3389/tcp
     - 25555/tcp
     - 4222/tcp
     - 25250/tcp
@@ -52,7 +52,7 @@
   type: replace
   value:
     agent:
-      mbus: https://mbus:((mbus_bootstrap_password))@0.0.0.0:6868
+      mbus: https://mbus:((mbus_bootstrap_password))@0.0.0.0:3389
     docker:
       host: ((docker_host))
       tls: ((docker_tls))
